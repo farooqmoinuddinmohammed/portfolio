@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found</title>
+<script>
+// Case-insensitive redirect: /portfolio/commbank -> /portfolio/CommBank/
+// Add each new portfolio folder name to this list.
+(function(){
+  var pages=['CommBank'];
+  var base='/portfolio/', p=location.pathname;
+  if(p.toLowerCase().indexOf(base)!==0) return;
+  var seg=p.slice(base.length).split('/')[0].toLowerCase();
+  for(var i=0;i<pages.length;i++){
+    if(pages[i].toLowerCase()===seg){ location.replace(base+pages[i]+'/'+location.hash); return; }
+  }
+})();
+</script>
+<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#f7f6f2;color:#1b1f24;display:grid;place-items:center;min-height:100vh;padding:16px;text-align:center}a{color:#0f6b5c}@media (prefers-color-scheme:dark){body{background:#111416;color:#e9ebec}a{color:#4fc1a9}}</style>
+</head>
+<body><p>Page not found. <a href="https://farooqmoinuddinmohammed.github.io/">Go to the main portfolio</a></p></body>
+</html>

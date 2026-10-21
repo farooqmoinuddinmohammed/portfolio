@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farooq Moinuddin Mohammed</title>
+<meta name="description" content="Senior Business Analyst & Technical Product Owner in Melbourne. 15+ years in complex systems, data mapping, integration design, discovery and user journeys.">
+<meta property="og:title" content="Farooq Moinuddin Mohammed — Senior BA & Technical Product Owner">
+<meta property="og:description" content="15+ years on complex, data-rich platforms in a regulated industry. Data mapping, integration design across 8+ systems, discovery and user journeys. Melbourne, available immediately.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f6f2; --surface:#ffffff; --ink:#1b1f24; --muted:#5b6470; --line:#e3e1da;
+  --accent:#0f6b5c; --accent-soft:#e3f1ee; --chip:#f0efe9;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111416; --surface:#181c1f; --ink:#e9ebec; --muted:#9aa3ab; --line:#2a3035;
+    --accent:#4fc1a9; --accent-soft:#163029; --chip:#20262a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111416; --surface:#181c1f; --ink:#e9ebec; --muted:#9aa3ab; --line:#2a3035;
+  --accent:#4fc1a9; --accent-soft:#163029; --chip:#20262a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.2;margin:0}
+h2{font-size:1.9rem;margin-bottom:28px}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-family:Fraunces,serif;font-weight:600;text-decoration:none;color:var(--ink);font-size:1.1rem}
+.links{display:flex;gap:22px;align-items:center}
+.links a{color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:500}
+.links a:hover{color:var(--ink)}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;width:34px;height:34px;cursor:pointer;font-size:15px}
+@media (max-width:720px){.links a{display:none}}
+
+/* hero */
+.hero{padding:88px 0 64px}
+.hero h1{font-size:clamp(2.3rem,6vw,3.8rem);letter-spacing:-.01em}
+.hero .role{font-size:clamp(1.05rem,2.2vw,1.3rem);color:var(--muted);margin:16px 0 26px;max-width:720px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
+.badge{background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:5px 13px;font-size:.84rem;font-weight:500}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 22px;border-radius:10px;font-weight:600;text-decoration:none;font-size:.95rem}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.btn.ghost{border:1px solid var(--line);color:var(--ink)}
+.btn:hover{opacity:.88}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:24px}
+.stat{background:var(--surface);padding:22px 20px}
+.stat b{display:block;font-family:Fraunces,serif;font-size:2rem;color:var(--accent);font-weight:600;line-height:1.1}
+.stat span{font-size:.87rem;color:var(--muted)}
+
+section{padding:64px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+.lead{font-size:1.08rem;max-width:780px}
+
+/* competencies */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{font-size:1.1rem;margin-bottom:12px}
+.card p{margin:0;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{background:var(--chip);border-radius:7px;padding:4px 10px;font-size:.84rem}
+
+/* timeline */
+.job{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:28px 0;border-top:1px solid var(--line)}
+.job:first-of-type{border-top:0;padding-top:0}
+.when{color:var(--muted);font-size:.88rem;font-weight:500}
+.when .dur{display:block;font-weight:400;opacity:.85}
+.job h3{font-size:1.25rem}
+.org{color:var(--accent);font-weight:600;font-size:.95rem;margin:4px 0 10px}
+.ctx{color:var(--muted);margin:0 0 12px}
+.job ul{margin:0;padding-left:18px}
+.job li{margin-bottom:6px}
+.job li::marker{color:var(--accent)}
+details summary{cursor:pointer;color:var(--accent);font-weight:600;font-size:.9rem;margin-top:8px;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"+ "}
+details[open] summary::before{content:"− "}
+details ul{margin-top:8px!important}
+@media (max-width:720px){.job{grid-template-columns:1fr;gap:6px}}
+
+.ai ul{padding-left:18px;max-width:820px}
+.ai li{margin-bottom:10px}
+
+.edu{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+/* contact */
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:44px;text-align:center}
+.contact p{color:var(--muted);max-width:560px;margin:12px auto 26px}
+.contact .cta{justify-content:center}
+@media (max-width:600px){.contact{padding:30px 20px}.wrap{padding:0 16px}}
+footer{padding:36px 0;color:var(--muted);font-size:.85rem;text-align:center}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Farooq M. Mohammed</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#data">Data &amp; Integration</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button id="theme" aria-label="Toggle colour theme">◐</button>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap" id="top">
+
+  <header class="hero">
+    <div class="eyebrow">Melbourne, VIC · Available immediately</div>
+    <h1>Farooq Moinuddin Mohammed</h1>
+    <p class="role">Senior Business Analyst &amp; Technical Product Owner — complex systems, data mapping, integration design, discovery and user journeys.</p>
+    <div class="badges">
+      <span class="badge">Australian Permanent Resident</span>
+      <span class="badge">15+ years BA &amp; Product Ownership</span>
+      <span class="badge">Data mapping &amp; integration</span>
+      <span class="badge">Regulated industry</span>
+    </div>
+    <div class="cta">
+      <a class="btn primary" href="mailto:farooq817@gmail.com">Get in touch</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/farooqmoinuddinmohammed/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><b>8+</b><span>interconnected systems coordinated</span></div>
+    <div class="stat"><b>600K+</b><span>customer records migrated (CRM requirements lead)</span></div>
+    <div class="stat"><b>70%</b><span>less time on requirements capture using AI</span></div>
+    <div class="stat"><b>40%</b><span>fewer production defects</span></div>
+    <div class="stat"><b>30%</b><span>less manual intervention</span></div>
+    <div class="stat"><b>20%</b><span>lift in delivery velocity</span></div>
+  </div>
+
+  <section id="about">
+    <div class="eyebrow">About</div>
+    <h2>Professional summary</h2>
+    <p class="lead">Senior Business Analyst and Technical Product Owner with 15+ years working on complex, data-rich operational platforms in telecommunications, a regulated industry. I lead discovery through workshops and interviews with users and stakeholders, and define user journeys, process flows, requirements and data mappings.</p>
+    <p class="lead">I design integrations across 8+ interconnected systems with architects, engineers, product owners and operations teams. I have designed a network inventory data model, built wireframes and persona-based views, and use AI to speed up requirements work.</p>
+  </section>
+
+  <section id="skills">
+    <div class="eyebrow">Core competencies</div>
+    <h2>What I bring</h2>
+    <div class="grid">
+      <div class="card"><h3>Discovery &amp; Stakeholder Engagement</h3><div class="chips">
+        <span class="chip">Workshops &amp; interviews</span><span class="chip">User needs &amp; feedback analysis</span><span class="chip">POs, architects, engineers &amp; ops</span><span class="chip">Influencing &amp; challenging stakeholders</span></div></div>
+      <div class="card"><h3>Process Flows &amp; Experience Design</h3><div class="chips">
+        <span class="chip">Customer journeys</span><span class="chip">Process flows (BPMN)</span><span class="chip">Persona-based views</span><span class="chip">UX/UI requirements</span><span class="chip">Wireframes</span></div></div>
+      <div class="card"><h3>Data &amp; Integration</h3><div class="chips">
+        <span class="chip">Data mapping</span><span class="chip">Inventory &amp; service data models</span><span class="chip">Integration design across 8+ systems</span><span class="chip">REST/SOAP APIs</span><span class="chip">JSON/XML</span><span class="chip">Postman</span><span class="chip">Topologies &amp; dependencies</span></div></div>
+      <div class="card"><h3>Requirements &amp; Delivery</h3><div class="chips">
+        <span class="chip">Functional requirements &amp; specs</span><span class="chip">Traceability</span><span class="chip">Backlog ownership &amp; prioritisation</span><span class="chip">Agile delivery</span><span class="chip">Large-scale transformation</span></div></div>
+      <div class="card"><h3>AI-Enabled Workflows &amp; Impact</h3><div class="chips">
+        <span class="chip">Claude</span><span class="chip">Microsoft Copilot</span><span class="chip">Miro AI</span><span class="chip">Power BI Copilot</span><span class="chip">Requirements capture −70%</span><span class="chip">SQL &amp; Power BI</span></div></div>
+      <div class="card"><h3>Regulated Environment &amp; Tools</h3><div class="chips">
+        <span class="chip">Telecom regulatory requirements</span><span class="chip">JIRA</span><span class="chip">Confluence</span><span class="chip">Azure DevOps</span><span class="chip">MS Visio</span><span class="chip">Draw.io</span><span class="chip">Miro</span></div></div>
+    </div>
+  </section>
+
+  <section id="data">
+    <div class="eyebrow">Data &amp; integration</div>
+    <h2>Complex systems, mapped end to end</h2>
+    <div class="grid">
+      <div class="card"><h3>Inventory data model</h3><p>Designed the Cramer inventory data model for the network inventory migration: devices, ports, cards, slots, links, circuits, services and topologies.</p></div>
+      <div class="card"><h3>Service data model</h3><p>Designed the service model, including Customer Facing Services (CFSs), Resource Facing Services (RFSs) and their decomposition.</p></div>
+      <div class="card"><h3>Integration design</h3><p>Led API requirements, integration specs and data mappings between UPC Broadband ordering and Sunrise provisioning, validated with REST/SOAP, JSON/XML and Postman.</p></div>
+      <div class="card"><h3>Data profiling &amp; validation</h3><p>Profiled legacy inventory and CRM data before mapping, and validated a 600,000-record migration directly with SQL and Power BI.</p></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="eyebrow">Career</div>
+    <h2>Professional experience</h2>
+
+    <article class="job">
+      <div class="when">Aug 2024 – Present</div>
+      <div>
+        <h3>Technical Product Owner / Application Lead</h3>
+        <div class="org">Sunrise Communications · via Infosys Limited, Australia</div>
+        <p class="ctx">Leading multiple parallel programmes on the Amdocs Cramer platform — a Network Inventory Migration, a new IPv6-based internet services capability and a network transformation programme — while owning the overall Cramer roadmap.</p>
+        <ul>
+          <li>Coordinate requirements and dependencies across <strong>8+</strong> interconnected systems spanning the Sunrise and former UPC Broadband environments; manual intervention dropped by <strong>30%</strong>.</li>
+          <li>Lead requirements for integrating UPC Broadband’s ordering system with Sunrise’s provisioning — API requirements, integration specs and data mappings, validated with architects and engineers.</li>
+          <li>Design the Cramer inventory data model and the service data model (CFSs, RFSs and decomposition).</li>
+          <li>Use Claude to draft requirements and generate scenarios and use cases, cutting requirements capture time by <strong>70%</strong>.</li>
+          <li>Refined acceptance criteria with QA, bringing production defects down by <strong>40%</strong>; stakeholder sessions helped lift delivery velocity by <strong>20%</strong>.</li>
+        </ul>
+        <details><summary>More</summary><ul>
+          <li>Took part in interviews with at least 15 users and 10 stakeholders across different applications.</li>
+          <li>Profiled the legacy inventory data before mapping it into Cramer.</li>
+          <li>Map current and future-state processes in BPMN for gap and impact analysis.</li>
+          <li>Own and prioritise the Network Inventory Migration backlog after the Sunrise/UPC Broadband merger, balancing new capability against defects and technical debt across a 10-member team and three delivered phases.</li>
+          <li>Create training plans and use case documents, run user walkthroughs and feed user feedback into implementation.</li>
+        </ul></details>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when">Feb 2020 – Aug 2024<span class="dur">4 yrs 6 mos</span></div>
+      <div>
+        <h3>Product Owner / Technical Business Analyst</h3>
+        <div class="org">Sunrise Communications · via Infosys Limited, Switzerland</div>
+        <p class="ctx">Migration of UPC Broadband’s legacy CRM to Sunrise’s upgraded Amdocs CRM platform, supporting all product lines across a 4.5-year, multi-project engagement.</p>
+        <ul>
+          <li>Led requirements for migrating <strong>600,000+</strong> customer records over three years, profiling the legacy data and validating it with SQL and Power BI (including Copilot).</li>
+          <li>Defined success metrics and acceptance criteria — first-time acceptance reached ~<strong>90%</strong>, post-release defects fell ~<strong>30%</strong>.</li>
+          <li>Gathered requirements for telecom regulatory changes such as Call Barring and Safe Browsing, including products integrating with third-party systems.</li>
+          <li>Built relationships with 20+ stakeholders, speeding decisions by ~<strong>25%</strong>.</li>
+        </ul>
+        <details><summary>More</summary><ul>
+          <li>Ran workshops across business, IT and vendors, challenging stakeholders where priorities conflicted and tracing recurring issues to root causes.</li>
+          <li>Turned business requirements into technical specifications with developers; rework fell ~30%.</li>
+          <li>Coordinated cross-application impacts with Netherlands-based provisioning and middleware teams across the wider Liberty Global group.</li>
+          <li>Defined requirements for a Device as a Service project for B2B customers, including integration with logistics management and billing systems.</li>
+        </ul></details>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when">Feb 2018 – Jan 2020<span class="dur">1 yr 11 mos</span></div>
+      <div>
+        <h3>Senior Business Analyst</h3>
+        <div class="org">Telstra · via Infosys — Key Australian engagement</div>
+        <p class="ctx">Infosys Live Operations — a service assurance and order-visibility product customised for Telstra, giving end-to-end visibility of orders from placement to completion.</p>
+        <ul>
+          <li>Ran discovery workshops with SMEs, Product Managers and BAs to understand customer pain points and service gaps.</li>
+          <li>Mapped current and future-state customer journeys from user feedback, directly shaping improvement priorities.</li>
+          <li>Shaped persona-based GUI visibility and UX/UI requirements; designed single-page event pop-ups on the SLA management screen.</li>
+          <li>Built Miro wireframes so stakeholders saw changes before development; reached <strong>100%</strong> test script coverage via a traceability matrix.</li>
+        </ul>
+        <details><summary>More</summary><ul>
+          <li>Documented how requirements connected to the order management and provisioning systems, working with architects on integration points and APIs.</li>
+          <li>Defined jeopardy management requirements, flagging orders at risk of missing service commitments before customers were affected.</li>
+        </ul></details>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when">Nov 2016 – Jan 2018<span class="dur">15 mos</span></div>
+      <div>
+        <h3>Senior Business Analyst</h3>
+        <div class="org">Sunrise Communications · via Sonata Software Limited</div>
+        <p class="ctx">Network port migration and hardware decommissioning within Amdocs Cramer.</p>
+        <ul>
+          <li>Ran a migration moving inventory and services between network ports and documented the end-to-end order flow.</li>
+          <li>Spotted a serious flaw in the planned migration and data approach before it caused damage; the redesign cut migration effort by <strong>50%</strong> and protected the timeline.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when">Nov 2014 – Nov 2016<span class="dur">2 yrs</span></div>
+      <div>
+        <h3>Senior Business Analyst</h3>
+        <div class="org">British Telecom · via Tech Mahindra</div>
+        <p class="ctx">BT Global Services and its large B2B enterprise customers, UK-based engagement.</p>
+        <ul>
+          <li>Led requirement-gathering workshops across BTGS’ major B2B accounts to define functional and non-functional requirements.</li>
+          <li>Documented interface agreements, APIs and integration points, and built the process maps the solution design relied on.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when">Feb 2011 – Nov 2014<span class="dur">3 yrs 9 mos</span></div>
+      <div>
+        <h3>Business Analyst</h3>
+        <div class="org">Sunrise Communications · via Sonata Software Limited</div>
+        <p class="ctx">Amdocs Cramer customisation including Ethernet service provisioning (ETT) and IPTV provisioning programmes.</p>
+        <ul>
+          <li>Helped deliver an <strong>18%</strong> cost saving by analysing where a business-critical system’s processes were wasting time and money.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section id="ai" class="ai">
+    <div class="eyebrow">Additional expertise</div>
+    <h2>AI, standards and tooling</h2>
+    <ul>
+      <li><strong>Claude</strong> for drafting requirements, summarising discussions and generating scenarios and use cases; <strong>Microsoft Copilot</strong> for meeting minutes; <strong>Power BI with Copilot</strong> and <strong>Miro AI</strong> for analysis and process mapping; <strong>ChatGPT</strong> for production and UAT incident analysis to surface trends, priorities and timelines.</li>
+      <li>Judgement on where AI helps and where it doesn’t — for example, not using it where PII is involved — and reviewing AI output before it is shared.</li>
+      <li>Epics, user stories and detailed business requirements with acceptance criteria.</li>
+      <li>Understanding of the TM Forum (TMF) APIs used for service provisioning and fulfilment.</li>
+      <li>Hands-on SQL and Power BI for everyday analysis and reporting; proficient in JIRA, Confluence, Azure DevOps, MS Visio and Draw.io.</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <div class="eyebrow">Education</div>
+    <div class="card edu">
+      <div><h3>Bachelor of Engineering (Computer Science)</h3><div class="ctx" style="margin:6px 0 0">Osmania University, Hyderabad, India</div></div>
+      <div class="when">2003 – 2007</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <div class="eyebrow">Contact</div>
+      <h2 style="margin:0">Let’s talk</h2>
+      <p>Melbourne-based Australian permanent resident, available immediately for Senior BA and Technical Product Owner roles.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:farooq817@gmail.com">farooq817@gmail.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/farooqmoinuddinmohammed/" target="_blank" rel="noopener">LinkedIn profile</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>© <span id="yr">2026</span> Farooq Moinuddin Mohammed</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('theme');
+  try{var s=localStorage.getItem('theme'); if(s) root.setAttribute('data-theme',s);}catch(e){}
+  btn.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    var next=cur==='dark'?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
